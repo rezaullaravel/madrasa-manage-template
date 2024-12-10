@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+    />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!---navigation section start-->
+    <div
+      class="bg-[rgb(248,248,248)] max-w-screen-xl mx-auto md:flex justify-between p-4 items-center"
+    >
+      <div class="flex justify-between md:mx-10">
+        <div>
+          <img class="h-6 cursor-pointer" src="./images/logo1.png" alt="" />
+        </div>
+
+        <button
+          type="button"
+          onclick="toggleNav()"
+          class="md:hidden cursor-pointer"
+        >
+          <i class="las la-bars"></i>
+        </button>
+      </div>
+
+      <nav class="hidden md:block" id="nav-container">
+        <ul class="md:flex gap-4">
+          <li class="hover:text-[#7ACC92] duration-1000">
+            <a href="">Home</a>
+          </li>
+          <li class="hover:text-[#7ACC92] duration-1000">
+            <a href="">Course</a>
+          </li>
+          <li class="hover:text-[#7ACC92] duration-1000">
+            <a href="">Blog</a>
+          </li>
+          <li class="hover:text-[#7ACC92] duration-1000">
+            <a href="">E-book</a>
+          </li>
+          <li class="hover:text-[#7ACC92] duration-1000">
+            <a href="">About</a>
+          </li>
+          <li class="hover:text-[#7ACC92] duration-1000">
+            <a href="">Contact</a>
+          </li>
+          <li class="hover:text-[#7ACC92] duration-1000">
+            <a href="">Pricing</a>
+          </li>
+          <li class="hover:text-[#7ACC92] duration-1000">
+            <a href="">Language</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hidden flex-col md:block md:flex-row md:mx-10" id="singnup">
+        <span><i class="las la-search block md:inline md:mr-4"></i></span>
+        <span
+          class="rounded-2xl border-2 p-2 cursor-pointer border-green-500 text-green-500 block md:inline"
+          >Login/signup</span
+        >
+      </div>
+    </div>
+    <!---navigation section end-->
+
+    <!---course section start-->
+    <div class="bg-[rgb(248,248,248)] max-w-screen-xl mx-auto mt-20 py-5">
+      <p class="text-center pt-5">
+        <span
+          class="bg-green-100 pb-2 pl-2 pr-2 border-2 border-green-200 text-sm rounded-2xl"
+        >
+          <span
+            class="bg-green-500 rounded-full inline-block w-[5px] h-[5px]"
+          ></span>
+          <span class="inline-block align-middle">Our Courses</span>
+        </span>
+      </p>
+      <h1 class="text-center md:text-[30px] mt-4">Our Most Popular Courses</h1>
+      <nav>
+        <ul class="flex justify-center items-center space-x-4 mt-4 text-sm">
+          <!-- Ensure full width and center alignment -->
+          <li
+            class="border-2 rounded-2xl border-green-200 px-3 pb-2 pt-2 bg-green-500 text-white"
+          >
+            <a href="">All Courses</a>
+          </li>
+          <li
+            class="border-2 rounded-2xl border-green-200 px-3 pb-2 pt-2 bg-green-100"
+          >
+            <a href="">Quran</a>
+          </li>
+          <li
+            class="border-2 rounded-2xl border-green-200 px-3 pb-2 pt-2 bg-green-100"
+          >
+            <a href="">Hadis</a>
+          </li>
+          <li
+            class="border-2 rounded-2xl border-green-200 px-3 pb-2 pt-2 bg-green-100"
+          >
+            <a href="">Language</a>
+          </li>
+          <li
+            class="border-2 rounded-2xl border-green-200 px-3 pb-2 pt-2 bg-green-100"
+          >
+            <a href="">Adhan</a>
+          </li>
+        </ul>
+      </nav>
+      <!---card start-->
+      <div
+        class="grid grid-cols-1 gap-3 mt-8 md:grid-cols-4 content-evenly md:pl-10"
+      >
+        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
+          <img
+            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
+            src="./images/islam.jpg"
+            alt="image"
+          />
+          <span
+            class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
+            >Quran</span
+          >
+          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
+          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
+            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
+          </p>
+        </div>
+
+        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
+          <img
+            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
+            src="./images/islam.jpg"
+            alt="image"
+          />
+          <span
+            class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
+            >Quran</span
+          >
+          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
+          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
+            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
+          </p>
+        </div>
+
+        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
+          <img
+            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
+            src="./images/islam.jpg"
+            alt="image"
+          />
+          <span
+            class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
+            >Quran</span
+          >
+          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
+          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
+            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
+          </p>
+        </div>
+
+        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
+          <img
+            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
+            src="./images/islam.jpg"
+            alt="image"
+          />
+          <span
+            class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
+            >Quran</span
+          >
+          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
+          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
+            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
+          </p>
+        </div>
+
+        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
+          <img
+            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
+            src="./images/islam.jpg"
+            alt="image"
+          />
+          <span
+            class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
+            >Quran</span
+          >
+          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
+          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
+            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
+          </p>
+        </div>
+
+        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
+          <img
+            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
+            src="./images/islam.jpg"
+            alt="image"
+          />
+          <span
+            class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
+            >Quran</span
+          >
+          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
+          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
+            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
+          </p>
+        </div>
+
+        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
+          <img
+            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
+            src="./images/islam.jpg"
+            alt="image"
+          />
+          <span
+            class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
+            >Quran</span
+          >
+          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
+          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
+            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
+          </p>
+        </div>
+
+        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
+          <img
+            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
+            src="./images/islam.jpg"
+            alt="image"
+          />
+          <span
+            class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
+            >Quran</span
+          >
+          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
+          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
+            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
+          </p>
+        </div>
+      </div>
+      <!--card end-->
+      <div class="text-center mt-6 mb-8">
+        <a href="" class="flex justify-center">
+          <span
+            class="border-2 rounded-2xl border-green-500 bg-green-500 text-white px-3 py-2 text-[12px]"
+            >Explorer All Courses</span
+          >
+          <span class="inline-block bg-green-500 rounded-full w-[35px] h-[35px] text-white"
+            ><i class="las la-long-arrow-alt-right align-middle mt-2 -rotate-45"></i></span
+          ></a
+        >
+      </div>
+    </div>
+    <!---course section end-->
+  </body>
+
+  <script>
+    function toggleNav() {
+      const navContainer = document.getElementById("nav-container");
+      const singnup = document.getElementById("singnup");
+
+      // Toggle visibility of the navigation menu
+      navContainer.classList.toggle("hidden");
+      singnup.classList.toggle("hidden");
+
+      // Apply margin-top to list items when shown
+      if (!navContainer.classList.contains("hidden")) {
+        navContainer.classList.add("mt-small");
+      } else {
+        navContainer.classList.remove("mt-small");
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.mt-small li {
+    margin-top: 20px;
+  }
+  
