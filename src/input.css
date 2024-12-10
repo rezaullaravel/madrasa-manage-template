@@ -6,4 +6,8 @@
 .mt-small li {
     margin-top: 20px;
   }
+
+.wrapper{
+  @apply container mx-auto px-5 md:px-0
+}
   

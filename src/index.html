@@ -8,16 +8,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Home Page</title>
   </head>
   <body>
     <!---navigation section start-->
-    <div
-      class="bg-[rgb(248,248,248)] max-w-screen-xl mx-auto md:flex justify-between p-4 items-center"
+    <!-- bg-[rgb(248,248,248)] -->
+    <header
+      class=" md:flex justify-between h-20 bg-gray-100 border-b  items-center sticky top-0 left-0 right-0 w-full"
     >
-      <div class="flex justify-between md:mx-10">
-        <div>
-          <img class="h-6 cursor-pointer" src="./images/logo1.png" alt="" />
+    <div class="container mx-auto px-5 md:px-0 w-full md:flex justify-between  items-center h-full">
+
+      <nav class="flex justify-between items-center h-full">
+        <div class="h-10">
+          <img class="w-full h-full object-cover cursor-pointer" src="./images/logo1.png" alt="" />
         </div>
 
         <button
@@ -27,7 +31,7 @@
         >
           <i class="las la-bars"></i>
         </button>
-      </div>
+      </nav>
 
       <nav class="hidden md:block" id="nav-container">
         <ul class="md:flex gap-4">
@@ -57,7 +61,8 @@
           </li>
         </ul>
       </nav>
-      <div class="hidden flex-col md:block md:flex-row md:mx-10" id="singnup">
+
+      <div class="hidden flex-col md:block md:flex-row " id="singnup">
         <span><i class="las la-search block md:inline md:mr-4"></i></span>
         <span
           class="rounded-2xl border-2 p-2 cursor-pointer border-green-500 text-green-500 block md:inline"
@@ -65,20 +70,24 @@
         >
       </div>
     </div>
+    </header>
     <!---navigation section end-->
 
     <!---course section start-->
-    <div class="bg-[rgb(248,248,248)] max-w-screen-xl mx-auto mt-20 py-5">
-      <p class="text-center pt-5">
-        <span
-          class="bg-green-100 pb-2 pl-2 pr-2 border-2 border-green-200 text-sm rounded-2xl"
-        >
+    <div
+      class="container mx-auto px-5 md:px-0 bg-[rgb(248,248,248)] mt-20 py-5"
+    >
+      <div class="flex justify-center items-center  ">
+        <span class="bg-green-100  border-2 border-green-200 text-sm rounded-2xl px-5 py-1">
           <span
-            class="bg-green-500 rounded-full inline-block w-[5px] h-[5px]"
-          ></span>
-          <span class="inline-block align-middle">Our Courses</span>
+          class="bg-green-500 rounded-full inline-block w-[8px] h-[8px] mr-1"
+        ></span>
+        <span class="inline-block align-middle tracking-widest leading-7">Our Courses</span>
         </span>
-      </p>
+         
+       
+      </div>
+
       <h1 class="text-center md:text-[30px] mt-4">Our Most Popular Courses</h1>
       <nav>
         <ul class="flex justify-center items-center space-x-4 mt-4 text-sm">
@@ -110,136 +119,179 @@
           </li>
         </ul>
       </nav>
+
       <!---card start-->
-      <div
-        class="grid grid-cols-1 gap-3 mt-8 md:grid-cols-4 content-evenly md:pl-10"
-      >
-        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
-          <img
-            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
-            src="./images/islam.jpg"
-            alt="image"
-          />
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-16">
+        <div class="border-2 border-solid border-green-500 rounded-md">
+          <div class="h-[250px] overflow-hidden p-3 rounded-md">
+            <img
+              class="w-full h-full rounded-md"
+              src="./images/islam.jpg"
+              alt="image"
+            />
+          </div>
           <span
             class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
             >Quran</span
           >
-          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
-          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
-            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
-          </p>
+          <div class="p-3">
+            <h1 class="text-xl font-semibold">Quran Memorization Course</h1>
+            <p class="text-[13px]">
+              We provide Quran lessons and all of our courses round the clock.
+            </p>
+          </div>
         </div>
-
-        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
-          <img
-            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
-            src="./images/islam.jpg"
-            alt="image"
-          />
+        <div class="border-2 border-solid border-green-500 rounded-md">
+          <div class="h-[250px] overflow-hidden p-3 rounded-md">
+            <img
+              class="w-full h-full rounded-md"
+              src="./images/islam.jpg"
+              alt="image"
+            />
+          </div>
           <span
             class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
             >Quran</span
           >
-          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
-          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
-            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
-          </p>
+          <div class="p-3">
+            <h1 class="text-xl font-semibold">Quran Memorization Course</h1>
+            <p class="text-[13px]">
+              We provide Quran lessons and all of our courses round the clock.
+            </p>
+          </div>
         </div>
-
-        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
-          <img
-            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
-            src="./images/islam.jpg"
-            alt="image"
-          />
+        <div class="border-2 border-solid border-green-500 rounded-md">
+          <div class="h-[250px] overflow-hidden p-3 rounded-md">
+            <img
+              class="w-full h-full rounded-md"
+              src="./images/islam.jpg"
+              alt="image"
+            />
+          </div>
           <span
             class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
             >Quran</span
           >
-          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
-          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
-            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
-          </p>
+          <div class="p-3">
+            <h1 class="text-xl font-semibold">Quran Memorization Course</h1>
+            <p class="text-[13px]">
+              We provide Quran lessons and all of our courses round the clock.
+            </p>
+          </div>
         </div>
-
-        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
-          <img
-            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
-            src="./images/islam.jpg"
-            alt="image"
-          />
+        <div class="border-2 border-solid border-green-500 rounded-md">
+          <div class="h-[250px] overflow-hidden p-3 rounded-md">
+            <img
+              class="w-full h-full rounded-md"
+              src="./images/islam.jpg"
+              alt="image"
+            />
+          </div>
           <span
             class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
             >Quran</span
           >
-          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
-          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
-            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
-          </p>
+          <div class="p-3">
+            <h1 class="text-xl font-semibold">Quran Memorization Course</h1>
+            <p class="text-[13px]">
+              We provide Quran lessons and all of our courses round the clock.
+            </p>
+          </div>
         </div>
-
-        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
-          <img
-            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
-            src="./images/islam.jpg"
-            alt="image"
-          />
+        <div class="border-2 border-solid border-green-500 rounded-md">
+          <div class="h-[250px] overflow-hidden p-3 rounded-md">
+            <img
+              class="w-full h-full rounded-md"
+              src="./images/islam.jpg"
+              alt="image"
+            />
+          </div>
           <span
             class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
             >Quran</span
           >
-          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
-          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
-            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
-          </p>
+          <div class="p-3">
+            <h1 class="text-xl font-semibold">Quran Memorization Course</h1>
+            <p class="text-[13px]">
+              We provide Quran lessons and all of our courses round the clock.
+            </p>
+          </div>
         </div>
-
-        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
-          <img
-            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
-            src="./images/islam.jpg"
-            alt="image"
-          />
+        <div class="border-2 border-solid border-green-500 rounded-md">
+          <div class="h-[250px] overflow-hidden p-3 rounded-md">
+            <img
+              class="w-full h-full rounded-md"
+              src="./images/islam.jpg"
+              alt="image"
+            />
+          </div>
           <span
             class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
             >Quran</span
           >
-          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
-          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
-            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
-          </p>
+          <div class="p-3">
+            <h1 class="text-xl font-semibold">Quran Memorization Course</h1>
+            <p class="text-[13px]">
+              We provide Quran lessons and all of our courses round the clock.
+            </p>
+          </div>
         </div>
-
-        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
-          <img
-            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
-            src="./images/islam.jpg"
-            alt="image"
-          />
+        <div class="border-2 border-solid border-green-500 rounded-md">
+          <div class="h-[250px] overflow-hidden p-3 rounded-md">
+            <img
+              class="w-full h-full rounded-md"
+              src="./images/islam.jpg"
+              alt="image"
+            />
+          </div>
           <span
             class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
             >Quran</span
           >
-          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
-          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
-            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
-          </p>
+          <div class="p-3">
+            <h1 class="text-xl font-semibold">Quran Memorization Course</h1>
+            <p class="text-[13px]">
+              We provide Quran lessons and all of our courses round the clock.
+            </p>
+          </div>
         </div>
-
-        <div class="border-2 border-solid border-green-500 rounded-md md:mr-2">
-          <img
-            class="w-full p-2 md:w-[300px] md:py-3 md:px-2"
-            src="./images/islam.jpg"
-            alt="image"
-          />
+        <div class="border-2 border-solid border-green-500 rounded-md">
+          <div class="h-[250px] overflow-hidden p-3 rounded-md">
+            <img
+              class="w-full h-full rounded-md"
+              src="./images/islam.jpg"
+              alt="image"
+            />
+          </div>
           <span
             class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
             >Quran</span
           >
-          <h1 class="ml-2 font-bold mt-2">Quran Memorize Course</h1>
-          <p class="ml-2 mt-[5px] mb-2 text-[10px]">
-            Lorem ipsum dolor sit amet, consectetur sit amet, consectetur
-          </p>
+          <div class="p-3">
+            <h1 class="text-xl font-semibold">Quran Memorization Course</h1>
+            <p class="text-[13px]">
+              We provide Quran lessons and all of our courses round the clock.
+            </p>
+          </div>
+        </div>
+        <div class="border-2 border-solid border-green-500 rounded-md">
+          <div class="h-[250px] overflow-hidden p-3 rounded-md">
+            <img
+              class="w-full h-full rounded-md"
+              src="./images/islam.jpg"
+              alt="image"
+            />
+          </div>
+          <span
+            class="ml-2 border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
+            >Quran</span
+          >
+          <div class="p-3">
+            <h1 class="text-xl font-semibold">Quran Memorization Course</h1>
+            <p class="text-[13px]">
+              We provide Quran lessons and all of our courses round the clock.
+            </p>
+          </div>
         </div>
       </div>
       <!--card end-->
@@ -249,10 +301,12 @@
             class="border-2 rounded-2xl border-green-500 bg-green-500 text-white px-3 py-2 text-[12px]"
             >Explorer All Courses</span
           >
-          <span class="inline-block bg-green-500 rounded-full w-[35px] h-[35px] text-white"
-            ><i class="las la-long-arrow-alt-right align-middle mt-2 -rotate-45"></i></span
-          ></a
-        >
+          <span
+            class="inline-block bg-green-500 rounded-full w-[35px] h-[35px] text-white"
+            ><i
+              class="las la-long-arrow-alt-right align-middle mt-2 -rotate-45"
+            ></i></span
+        ></a>
       </div>
     </div>
     <!---course section end-->
