@@ -14,72 +14,77 @@
   <body>
     <!---navigation section start-->
     <!-- bg-[rgb(248,248,248)] -->
-    <header
-      class="md:flex justify-between h-20 bg-gray-100 border-b items-center sticky top-0 left-0 right-0 w-full z-100"
-    >
+    <!-- Navbar Section -->
+    <header class="bg-gray-100 border-b fixed top-0 left-0 right-0 w-full z-50">
       <div
-        class="container mx-auto px-5 md:px-0 w-full md:flex justify-between items-center h-full"
+        class="container mx-auto px-5 md:px-0 flex justify-between items-center h-20"
       >
-        <nav class="flex justify-between items-center h-full">
+        <!-- Logo and Mobile Toggle -->
+        <nav class="flex justify-between items-center ">
           <div class="h-10">
             <img
               class="w-full h-full object-cover cursor-pointer"
               src="./images/logo1.png"
-              alt=""
+              alt="Logo"
             />
           </div>
 
+          <!-- Mobile Menu Button -->
           <button
             type="button"
             onclick="toggleNav()"
-            class="md:hidden cursor-pointer"
+            class="md:hidden text-gray-700 text-2xl"
           >
             <i class="las la-bars"></i>
           </button>
         </nav>
 
+        <!-- Navigation Links -->
         <nav class="hidden md:block" id="nav-container">
-          <ul class="md:flex gap-4">
-            <li class="hover:text-[#7ACC92] duration-1000">
-              <a href="">Home</a>
+          <ul class="md:flex gap-6">
+            <li class="hover:text-[#7ACC92] duration-300">
+              <a href="#">Home</a>
             </li>
-            <li class="hover:text-[#7ACC92] duration-1000">
-              <a href="">Course</a>
+            <li class="hover:text-[#7ACC92] duration-300">
+              <a href="#">Course</a>
             </li>
-            <li class="hover:text-[#7ACC92] duration-1000">
-              <a href="">Blog</a>
+            <li class="hover:text-[#7ACC92] duration-300">
+              <a href="#">Blog</a>
             </li>
-            <li class="hover:text-[#7ACC92] duration-1000">
-              <a href="">E-book</a>
+            <li class="hover:text-[#7ACC92] duration-300">
+              <a href="#">E-book</a>
             </li>
-            <li class="hover:text-[#7ACC92] duration-1000">
-              <a href="">About</a>
+            <li class="hover:text-[#7ACC92] duration-300">
+              <a href="#">About</a>
             </li>
-            <li class="hover:text-[#7ACC92] duration-1000">
-              <a href="">Contact</a>
+            <li class="hover:text-[#7ACC92] duration-300">
+              <a href="#">Contact</a>
             </li>
-            <li class="hover:text-[#7ACC92] duration-1000">
-              <a href="">Pricing</a>
+            <li class="hover:text-[#7ACC92] duration-300">
+              <a href="#">Pricing</a>
             </li>
-            <li class="hover:text-[#7ACC92] duration-1000">
-              <a href="">Language</a>
+            <li class="hover:text-[#7ACC92] duration-300">
+              <a href="#">Language</a>
             </li>
           </ul>
         </nav>
 
-        <div class="hidden flex-col md:block md:flex-row" id="singnup">
-          <span><i class="las la-search block md:inline md:mr-4"></i></span>
+        <!-- Signup and Search -->
+        <div class="hidden md:flex items-center gap-4" id="signup">
+          <i class="las la-search text-gray-700 text-xl cursor-pointer"></i>
           <span
-            class="rounded-2xl border-2 p-2 cursor-pointer border-green-500 text-green-500 block md:inline"
-            >Login/signup</span
+            class="rounded-2xl border-2 p-2 cursor-pointer border-green-500 text-green-500"
+            >Login/Signup</span
           >
         </div>
       </div>
     </header>
+
+
     <!---navigation section end-->
 
     <!---course section start-->
-    <section class="container mx-auto px-5 md:px-0 md:py-16 py-8">
+    <section class="container mx-auto px-5 md:px-0 md:py-16 py-8 mt-20">
       <div class="flex justify-center items-center">
         <span
           class="bg-green-100 border-1 border-green-100 text-sm rounded-2xl px-5 py-1"
@@ -303,29 +308,40 @@
         <!-- Section Heading -->
         <div class="space-y-5">
           <div class="flex justify-center items-center">
-            <span class="bg-green-50 border-2 border-green-200 text-sm rounded-2xl px-5 py-0">
-              <span class="bg-green-500 rounded-full inline-block w-[8px] h-[8px] mr-1"></span>
-              <span class="inline-block align-middle tracking-widest leading-7">Pricing</span>
+            <span
+              class="bg-green-50 border-2 border-green-200 text-sm rounded-2xl px-5 py-0"
+            >
+              <span
+                class="bg-green-500 rounded-full inline-block w-[8px] h-[8px] mr-1"
+              ></span>
+              <span class="inline-block align-middle tracking-widest leading-7"
+                >Pricing</span
+              >
             </span>
           </div>
           <h1 class="text-center md:text-3xl">Membership Pricing</h1>
         </div>
-    
+
         <!-- Pricing Cards -->
-        <div class="grid grid-cols-1  lg:grid-cols-3 gap-10 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 py-8">
           <!-- Pricing Card -->
           <div class="border-2 border-solid border-green-200 rounded-md p-5">
             <div class="space-y-3">
-              <span class="border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100">Quran</span>
+              <span
+                class="border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
+                >Basic</span
+              >
               <p>Get essential features included in our basic plan</p>
               <p class="flex justify-between items-center">
-                <span class="text-2xl md:text-3xl font-semibold">$40 USD/m</span>
+                <span class="text-2xl md:text-3xl font-semibold"
+                  >$40 USD/m</span
+                >
                 <span>Currency</span>
               </p>
             </div>
-    
+
             <div class="border border-green-200 mt-3"></div>
-    
+
             <div class="mt-8 space-y-4">
               <h4 class="text-xl font-medium">Why should you take this</h4>
               <ul class="space-y-2">
@@ -334,35 +350,48 @@
                 <li>Free E-Books</li>
               </ul>
             </div>
-    
+
             <div class="text-center mt-20">
               <a href="#" class="flex">
-                <span class="w-full border-2 rounded-2xl border-green-500 px-5 py-2 text-[12px]">Start Your Project</span>
-                <span class="bg-green-500 rounded-full w-[35px] h-[35px] text-white">
-                  <i class="las la-long-arrow-alt-right align-middle mt-2 -rotate-45"></i>
+                <span
+                  class="w-full border-2 rounded-2xl border-green-500 px-5 py-2 text-[12px]"
+                  >Start Your Project</span
+                >
+                <span
+                  class="bg-green-500 rounded-full w-[35px] h-[35px] text-white"
+                >
+                  <i
+                    class="las la-long-arrow-alt-right align-middle mt-2 -rotate-45"
+                  ></i>
                 </span>
               </a>
             </div>
           </div>
-    
-          <div class="border-2 border-solid border-green-200 rounded-md p-5 relative overflow-hidden">
-            <p class="w-[150px] absolute top-10 right-0  transform rotate-45 translate-x-8 -translate-y-4 text-center bg-[#00A32E] text-white px-4 py-1 text-sm font-bold">
+
+          <div
+            class="border-2 border-solid border-green-200 rounded-md p-5 relative overflow-hidden -z-101"
+          >
+            <p
+              class="w-[150px] absolute top-10 right-0 transform rotate-45 translate-x-8 -translate-y-4 text-center bg-[#00A32E] text-white px-4 py-1 text-sm font-bold"
+            >
               Save 20%
             </p>
             <div class="space-y-3">
-              <span class="border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100">Standard</span>
+              <span
+                class="border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
+                >Standard</span
+              >
               <p>Access advanced learning features in our premium plan</p>
               <p class="flex justify-between items-center">
-                <span class="text-2xl md:text-3xl font-semibold">$60 USD/m</span>
-                <span >Currency</span>
+                <span class="text-2xl md:text-3xl font-semibold"
+                  >$60 USD/m</span
+                >
+                <span>Currency</span>
               </p>
-             
             </div>
 
-           
-    
             <div class="border border-green-200 mt-3"></div>
-    
+
             <div class="mt-8 space-y-4">
               <h4 class="text-xl font-medium">Why should you take this</h4>
               <ul class="space-y-2">
@@ -371,32 +400,48 @@
                 <li>Access to premium resources</li>
               </ul>
             </div>
-    
+
             <div class="text-center mt-20">
               <a href="#" class="flex">
-                <span class="w-full border-2 rounded-2xl border-green-500 px-5 py-2 text-[12px]">Start Your Project</span>
-                <span class="bg-green-500 rounded-full w-[35px] h-[35px] text-white">
-                  <i class="las la-long-arrow-alt-right align-middle mt-2 -rotate-45"></i>
+                <span
+                  class="w-full border-2 rounded-2xl border-green-500 px-5 py-2 text-[12px]"
+                  >Start Your Project</span
+                >
+                <span
+                  class="bg-green-500 rounded-full w-[35px] h-[35px] text-white"
+                >
+                  <i
+                    class="las la-long-arrow-alt-right align-middle mt-2 -rotate-45"
+                  ></i>
                 </span>
               </a>
             </div>
           </div>
-    
-          <div class="border-2 border-solid border-green-200 rounded-md p-5 relative overflow-hidden">
-            <p class="w-[150px] absolute top-10 right-0  transform rotate-45 translate-x-8 -translate-y-4 text-center bg-black text-white px-4 py-1 text-sm font-bold">
+
+          <div
+            class="border-2 border-solid border-green-200 rounded-md p-5 relative overflow-hidden"
+          >
+            <p
+              class="w-[150px] absolute top-10 right-0 transform rotate-45 translate-x-8 -translate-y-4 text-center bg-black text-white px-4 py-1 text-sm font-bold"
+            >
               Save 35%
             </p>
             <div class="space-y-3">
-              <span class="border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100">Premium</span>
+              <span
+                class="border-2 rounded-2xl border-green-200 px-2 pb-1 pt-1 text-[12px] bg-green-100"
+                >Premium</span
+              >
               <p>Comprehensive plan for advanced learners</p>
               <p class="flex justify-between items-center">
-                <span class="text-2xl md:text-3xl font-semibold">$80 USD/m</span>
+                <span class="text-2xl md:text-3xl font-semibold"
+                  >$80 USD/m</span
+                >
                 <span>Currency</span>
               </p>
             </div>
-    
+
             <div class="border border-green-200 mt-3"></div>
-    
+
             <div class="mt-8 space-y-4">
               <h4 class="text-xl font-medium">Why should you take this</h4>
               <ul class="space-y-2">
@@ -405,38 +450,417 @@
                 <li>Personalized mentorship</li>
               </ul>
             </div>
-    
+
             <div class="text-center mt-20">
               <a href="#" class="flex">
-                <span class="w-full border-2 rounded-2xl border-green-500 px-5 py-2 text-[12px]">Start Your Project</span>
-                <span class="bg-green-500 rounded-full w-[35px] h-[35px] text-white">
-                  <i class="las la-long-arrow-alt-right align-middle mt-2 -rotate-45"></i>
+                <span
+                  class="w-full border-2 rounded-2xl border-green-500 px-5 py-2 text-[12px]"
+                  >Start Your Project</span
+                >
+                <span
+                  class="bg-green-500 rounded-full w-[35px] h-[35px] text-white"
+                >
+                  <i
+                    class="las la-long-arrow-alt-right align-middle mt-2 -rotate-45"
+                  ></i>
                 </span>
               </a>
             </div>
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5 p-5 border-2 rounded-md">
-          
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5 p-5 border-2 rounded-md"
+        >
           <div>
-          <h3>Need a custom prizing ?</h3>
-          <p>Looking for a Custom Pricing Plan? We’re Here to Tailor the Perfect Solution Just for You!</p>
+            <h3>Need a custom prizing ?</h3>
+            <p>
+              Looking for a Custom Pricing Plan? We’re Here to Tailor the
+              Perfect Solution Just for You!
+            </p>
           </div>
-      
+
           <div class="text-center text-white">
             <a href="#" class="flex md:justify-end">
-              <span class="w-full md:w-40 border-2 rounded-2xl bg-green-500  border-green-500   px-5 py-2  text-[12px]">Contact Us</span>
-              <span class="bg-green-500 rounded-full w-[35px] h-[35px] ">
-                <i class="las la-long-arrow-alt-right align-middle mt-2 -rotate-45"></i>
+              <span
+                class="w-full md:w-40 border-2 rounded-2xl bg-green-500 border-green-500 px-5 py-2 text-[12px]"
+                >Contact Us</span
+              >
+              <span class="bg-green-500 rounded-full w-[35px] h-[35px]">
+                <i
+                  class="las la-long-arrow-alt-right align-middle mt-2 -rotate-45"
+                ></i>
               </span>
             </a>
           </div>
         </div>
       </div>
     </section>
-    
     <!-- pricing section start -->
+
+    <!-- E-book section start -->
+    <section class="md:py-16 py-8">
+      <div class="container mx-auto px-5 md:px-0">
+        <!-- Section Heading -->
+        <div class="space-y-5 text-center">
+          <div class="flex justify-center items-center">
+            <span
+              class="bg-green-50 border-2 border-green-200 text-sm rounded-2xl px-5 py-0"
+            >
+              <span
+                class="bg-green-500 rounded-full inline-block w-[8px] h-[8px] mr-1"
+              ></span>
+              <span class="inline-block align-middle tracking-widest leading-7"
+                >Online Reading</span
+              >
+            </span>
+          </div>
+          <h1 class="md:text-3xl text-2xl font-semibold">Our Latest E-Book</h1>
+        </div>
+
+        <!-- E-book Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 py-8">
+          <!-- Card Template -->
+          <div class="border-2 border-solid border-green-200 rounded-md p-6">
+            <div class="h-[250px] overflow-hidden rounded-md">
+              <img
+                class="w-full h-full object-cover rounded-md"
+                src="./images/book.jpg"
+                alt="Book Image"
+              />
+            </div>
+            <div class="space-y-5 mt-4">
+              <h2 class="text-center text-2xl font-semibold">Al-Quran</h2>
+              <a href="#" class="flex items-center justify-center gap-5">
+                <span
+                  class="border rounded-2xl border-green-500 px-12 py-2 text-[12px]"
+                  >View</span
+                >
+                <span
+                  class="text-green-500 border border-green-500 rounded-full w-[35px] h-[35px] flex items-center justify-center"
+                >
+                  <i
+                    class="las la-long-arrow-alt-right text-base -rotate-45"
+                  ></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- Duplicate this card for more items -->
+          <div class="border-2 border-solid border-green-200 rounded-md p-6">
+            <div class="h-[250px] overflow-hidden rounded-md">
+              <img
+                class="w-full h-full object-cover rounded-md"
+                src="./images/book.jpg"
+                alt="Book Image"
+              />
+            </div>
+            <div class="space-y-5 mt-4">
+              <h2 class="text-center text-2xl font-semibold uppercase">
+                Al-Quran
+              </h2>
+              <a href="#" class="flex items-center justify-center gap-5">
+                <span
+                  class="border rounded-2xl border-green-500 px-12 py-2 text-[12px]"
+                  >View</span
+                >
+                <span
+                  class="text-green-500 border border-green-500 rounded-full w-[35px] h-[35px] flex items-center justify-center"
+                >
+                  <i
+                    class="las la-long-arrow-alt-right text-base -rotate-45"
+                  ></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="border-2 border-solid border-green-200 rounded-md p-6">
+            <div class="h-[250px] overflow-hidden rounded-md">
+              <img
+                class="w-full h-full object-cover rounded-md"
+                src="./images/book.jpg"
+                alt="Book Image"
+              />
+            </div>
+            <div class="space-y-5 mt-4">
+              <h2 class="text-center text-2xl font-semibold uppercase">
+                Al-Quran
+              </h2>
+              <a href="#" class="flex items-center justify-center gap-5">
+                <span
+                  class="border rounded-2xl border-green-500 px-12 py-2 text-[12px]"
+                  >View</span
+                >
+                <span
+                  class="text-green-500 border border-green-500 rounded-full w-[35px] h-[35px] flex items-center justify-center"
+                >
+                  <i
+                    class="las la-long-arrow-alt-right text-base -rotate-45"
+                  ></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="border-2 border-solid border-green-200 rounded-md p-6">
+            <div class="h-[250px] overflow-hidden rounded-md">
+              <img
+                class="w-full h-full object-cover rounded-md"
+                src="./images/book.jpg"
+                alt="Book Image"
+              />
+            </div>
+            <div class="space-y-5 mt-4">
+              <h2 class="text-center text-2xl font-semibold uppercase">
+                Al-Quran
+              </h2>
+              <a href="#" class="flex items-center justify-center gap-5">
+                <span
+                  class="border rounded-2xl border-green-500 px-12 py-2 text-[12px]"
+                  >View</span
+                >
+                <span
+                  class="text-green-500 border border-green-500 rounded-full w-[35px] h-[35px] flex items-center justify-center"
+                >
+                  <i
+                    class="las la-long-arrow-alt-right text-base -rotate-45"
+                  ></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="border-2 border-solid border-green-200 rounded-md p-6">
+            <div class="h-[250px] overflow-hidden rounded-md">
+              <img
+                class="w-full h-full object-cover rounded-md"
+                src="./images/book.jpg"
+                alt="Book Image"
+              />
+            </div>
+            <div class="space-y-5 mt-4">
+              <h2 class="text-center text-2xl font-semibold uppercase">
+                Al-Quran
+              </h2>
+              <a href="#" class="flex items-center justify-center gap-5">
+                <span
+                  class="border rounded-2xl border-green-500 px-12 py-2 text-[12px]"
+                  >View</span
+                >
+                <span
+                  class="text-green-500 border border-green-500 rounded-full w-[35px] h-[35px] flex items-center justify-center"
+                >
+                  <i
+                    class="las la-long-arrow-alt-right text-base -rotate-45"
+                  ></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="border-2 border-solid border-green-200 rounded-md p-6">
+            <div class="h-[250px] overflow-hidden rounded-md">
+              <img
+                class="w-full h-full object-cover rounded-md"
+                src="./images/book.jpg"
+                alt="Book Image"
+              />
+            </div>
+            <div class="space-y-5 mt-4">
+              <h2 class="text-center text-2xl font-semibold uppercase">
+                Al-Quran
+              </h2>
+              <a href="#" class="flex items-center justify-center gap-5">
+                <span
+                  class="border rounded-2xl border-green-500 px-12 py-2 text-[12px]"
+                  >View</span
+                >
+                <span
+                  class="text-green-500 border border-green-500 rounded-full w-[35px] h-[35px] flex items-center justify-center"
+                >
+                  <i
+                    class="las la-long-arrow-alt-right text-base -rotate-45"
+                  ></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- View All Books Button -->
+        <div class="text-center">
+          <a href="#" class="flex items-center justify-center gap-3">
+            <span
+              class="border-2 rounded-2xl border-green-500 bg-green-500 text-white px-4 py-2 text-sm"
+              >Read All Books</span
+            >
+            <span
+              class="bg-green-500 rounded-full w-[35px] h-[35px] text-white flex items-center justify-center"
+            >
+              <i class="las la-long-arrow-alt-right text-base -rotate-45"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- E-book section end -->
+
+    <!-- E-book section start -->
+    <section class="md:py-16 py-8">
+      <div class="container mx-auto px-5 md:px-0">
+        <!-- Section Heading -->
+        <div class="space-y-5 text-center">
+          <div class="flex justify-center items-center">
+            <span
+              class="bg-green-50 border-2 border-green-200 text-sm rounded-2xl px-5 py-0"
+            >
+              <span
+                class="bg-green-500 rounded-full inline-block w-[8px] h-[8px] mr-1"
+              ></span>
+              <span class="inline-block align-middle tracking-widest leading-7"
+                >Recent Blog</span
+              >
+            </span>
+          </div>
+          <h1 class="md:text-3xl text-2xl font-semibold">
+            Read updated journal
+          </h1>
+        </div>
+
+        <!-- E-book Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 py-8">
+          <!-- Card Template -->
+          <div class="overflow-hidden">
+            <div class="h-[250px] overflow-hidden rounded-md cursor-pointer">
+              <img
+                class="w-full h-full object-cover rounded-md"
+                src="./images/al-quran.avif"
+                alt="Book Image"
+              />
+            </div>
+            <div class="space-y-3 mt-4">
+              <h2 class="text-lg font-semibold cursor-pointer">
+                How many times Bismillah repeated in Quran?
+              </h2>
+              <p class="text-sm flex gap-3 items-center">
+                <span>November 1, 2024</span>
+                <span class="items-center">
+                  <span
+                    class="inline-block h-2 w-2 bg-green-500 rounded-full"
+                  ></span>
+                  <span>13 Min Read</span>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <div class="h-[250px] overflow-hidden rounded-md cursor-pointer">
+              <img
+                class="w-full h-full object-cover rounded-md"
+                src="./images/al-quran.avif"
+                alt="Book Image"
+              />
+            </div>
+            <div class="space-y-3 mt-4">
+              <h2 class="text-lg font-semibold cursor-pointer">
+                How many times Bismillah repeated in Quran?
+              </h2>
+              <p class="text-sm flex gap-3 items-center">
+                <span>November 1, 2024</span>
+                <span class="items-center">
+                  <span
+                    class="inline-block h-2 w-2 bg-green-500 rounded-full"
+                  ></span>
+                  <span>13 Min Read</span>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <div class="h-[250px] overflow-hidden rounded-md cursor-pointer">
+              <img
+                class="w-full h-full object-cover rounded-md"
+                src="./images/al-quran.avif"
+                alt="Book Image"
+              />
+            </div>
+            <div class="space-y-3 mt-4">
+              <h2 class="text-lg font-semibold cursor-pointer">
+                How many times Bismillah repeated in Quran?
+              </h2>
+              <p class="text-sm flex gap-3 items-center">
+                <span>November 1, 2024</span>
+                <span class="items-center">
+                  <span
+                    class="inline-block h-2 w-2 bg-green-500 rounded-full"
+                  ></span>
+                  <span>13 Min Read</span>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <div class="h-[250px] overflow-hidden rounded-md cursor-pointer">
+              <img
+                class="w-full h-full object-cover rounded-md"
+                src="./images/al-quran.avif"
+                alt="Book Image"
+              />
+            </div>
+            <div class="space-y-3 mt-4">
+              <h2 class="text-lg font-semibold cursor-pointer">
+                How many times Bismillah repeated in Quran?
+              </h2>
+              <p class="text-sm flex gap-3 items-center">
+                <span>November 1, 2024</span>
+                <span class="items-center">
+                  <span
+                    class="inline-block h-2 w-2 bg-green-500 rounded-full"
+                  ></span>
+                  <span>13 Min Read</span>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <div class="h-[250px] overflow-hidden rounded-md cursor-pointer">
+              <img
+                class="w-full h-full object-cover rounded-md"
+                src="./images/al-quran.avif"
+                alt="Book Image"
+              />
+            </div>
+            <div class="space-y-3 mt-4">
+              <h2 class="text-lg font-semibold cursor-pointer">
+                How many times Bismillah repeated in Quran?
+              </h2>
+              <p class="text-sm flex gap-3 items-center">
+                <span>November 1, 2024</span>
+                <span class="items-center">
+                  <span
+                    class="inline-block h-2 w-2 bg-green-500 rounded-full"
+                  ></span>
+                  <span>13 Min Read</span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- View All Books Button -->
+        <div class="text-center">
+          <a href="#" class="flex items-center justify-center gap-3">
+            <span
+              class="border-2 rounded-2xl border-green-500 bg-green-500 text-white px-4 py-2 text-sm"
+              >See All Blogs</span
+            >
+            <span
+              class="bg-green-500 rounded-full w-[35px] h-[35px] text-white flex items-center justify-center"
+            >
+              <i class="las la-long-arrow-alt-right text-base -rotate-45"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- E-book section end -->
   </body>
 
   <script>
