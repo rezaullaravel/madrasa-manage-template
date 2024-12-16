@@ -2,12 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .mt-small li {
-    margin-top: 20px;
-  }
-
-.wrapper{
-  @apply container mx-auto px-5 md:px-0
+  margin-top: 20px;
 }
+
+.wrapper {
+  @apply container mx-auto px-5 md:px-0;
+}
+
+
+
+.slider{
+  position: relative;
+  }
   
+  .button-swiper{
+    /* padding: 20px; */
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem !important;
+    
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next{
+    top: unset !important;
+    left: unset !important;
+    right: unset !important;
+    bottom: unset !important;
+    position: unset !important;
+    font-size: unset !important;
+  }
+  
+
+  
+  .swiper-button-prev::after,
+  .swiper-button-next::after{
+    font-size: 1rem;
+    font-weight: bold;
+  }
